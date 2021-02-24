@@ -10,6 +10,12 @@
     <height>628</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>JetBrains Mono</family>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -61,6 +67,20 @@
          </property>
          <property name="checkable">
           <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbClear">
+         <property name="text">
+          <string>clear</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbCopy">
+         <property name="text">
+          <string>copy</string>
          </property>
         </widget>
        </item>

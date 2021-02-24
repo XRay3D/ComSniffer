@@ -17,17 +17,18 @@ public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
-private slots:
+private Q_SLOTS:
     void on_pbStartStop_clicked(bool checked);
+    void on_pbClear_clicked();
+    void on_pbCopy_clicked();
 
 private:
     Ui::MainWindow* ui;
-
     QSerialPort port1;
-
     QSerialPort port2;
-
     int timerId {};
+
+    static const inline auto msg { QStringLiteral("%1\t%2:\t%3") };
 
     // QObject interface
 protected:
